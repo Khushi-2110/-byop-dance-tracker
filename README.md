@@ -35,7 +35,7 @@ git clone [https://github.com/Khushi-2110/-byop-dance-tracker.git](https://githu
 cd -byop-dance-tracker
 ```
 
-### Step 2: Configure a Virtual Environment
+### 2: Configure a Virtual Environment
 
 It is highly recommended to use a virtual environment to ensure dependency stability.
 
@@ -60,7 +60,7 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-### Step 3: Install Dependencies
+### 3: Install Dependencies
 
 This project requires specific library versions (notably numpy<2.0.0) to maintain compatibility with the MediaPipe framework.
 ``` bash
@@ -68,7 +68,7 @@ pip install -r requirements.txt
 ```
 Execution & Usage Instructions
 
-### Step 4: Launch the Application
+### 4: Launch the Application
 
 Ensure your webcam is not being used by other applications (Zoom, Teams, etc.), then run:
 
@@ -76,7 +76,7 @@ Ensure your webcam is not being used by other applications (Zoom, Teams, etc.), 
 python main.py
 ```
 
-### Step 5: Practice and Feedback
+### 5: Practice and Feedback
 
 Positioning: Stand 5-7 feet away from the camera so your full body is visible.
 
@@ -84,13 +84,13 @@ Live Feedback: Perform your routine. The screen will display live angle calculat
 
 Stop Session: Press the 'q' key on your keyboard to close the camera feed.
   
-### Step 6: Review Analytics
+### 6: Review Analytics
 
 Graph: A Matplotlib window will pop up automatically showing your extension consistency over time.
 
 Telemetry: A new .csv file with a unique timestamp will be saved to your folder containing the raw coordinate data.
 
-### Troubleshooting
+### 7: Troubleshooting
 
 Numpy/MediaPipe Error: If you see a numpy._core error, ensure you are using the virtual environment and have installed the versions specified in requirements.txt.
 
