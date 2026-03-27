@@ -9,6 +9,18 @@ To take it a step further than just live feedback, the script logs this spatial 
 
 **Course Concepts Applied:** Image Processing, Pose Estimation, Coordinate Geometry, and Data Visualization.
 
+**Project Structure**
+
+main.py: The primary application script containing the CV pipeline.
+
+requirements.txt: Configuration file for environment dependencies.
+
+README.md: Documentation and setup guide.
+
+.gitignore: Prevents virtual environment and cache files from being tracked.
+
+dance_telemetry_*.csv: Output data files from practice sessions.
+
 ---
 
 ## Local Setup & Installation
@@ -30,7 +42,10 @@ It is highly recommended to use a virtual environment to ensure dependency stabi
 For Windows (PowerShell):
 If scripts are disabled on your system, run the first command as Administrator:
 
+``` bash
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+Create environment 
 ``` bash
 python -m venv venv
 ```
@@ -74,3 +89,11 @@ Stop Session: Press the 'q' key on your keyboard to close the camera feed.
 Graph: A Matplotlib window will pop up automatically showing your extension consistency over time.
 
 Telemetry: A new .csv file with a unique timestamp will be saved to your folder containing the raw coordinate data.
+
+### Troubleshooting
+
+Numpy/MediaPipe Error: If you see a numpy._core error, ensure you are using the virtual environment and have installed the versions specified in requirements.txt.
+
+Scripts Disabled: If the activate command fails on Windows, refer to Step 2 for the Set-ExecutionPolicy fix.
+
+Webcam Access: Ensure no other application is currently using the camera.
